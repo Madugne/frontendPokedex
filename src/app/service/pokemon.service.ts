@@ -98,15 +98,6 @@ export class PokemonService {
         );
     }
 
-    //recupera i favoriti di uno specifico utente dal local storage
-    // recuperaPreferiti() {
-    //     const utente = JSON.parse(localStorage.getItem('user')!);
-    //     const id = utente.user.id;
-    //     return this.http.get<Favourite[]>(
-    //         `${this.baseUrl}favorites?userId=${id}`
-    //     );
-    // }
-
     //recupera i dettagli del pokemon corrispondente
     dettaglioPreferito(id: number) {
         return this.http.get<Pokemon>(`${this.apiUrl}pokemon/${id}`);

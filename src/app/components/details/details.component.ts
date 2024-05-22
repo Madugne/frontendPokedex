@@ -19,9 +19,6 @@ export class DetailsComponent implements OnInit {
 
     //recupero dati dell'utente loggato
     ngOnInit(): void {
-        // this.authSrv.user$.subscribe((_utente) => {
-        //     this.utente = _utente;
-        // });
         const userDetails = localStorage.getItem('kakUser');
 
         if (userDetails) {

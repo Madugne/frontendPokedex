@@ -12,9 +12,6 @@ export class TokenInterceptor implements HttpInterceptor {
     router: any;
     constructor() {}
 
-    //   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
-    //     return next.handle(request);
-    //   }
     intercept(
         request: HttpRequest<any>,
         next: HttpHandler

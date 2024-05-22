@@ -149,14 +149,7 @@ export class ListComponent implements OnInit, OnDestroy {
             });
     }
 
-    // isFavorito(pokemon: Pokemon): Favourite | undefined {
-    //     return this.favoriti.find((f) => f.pokemonId === pokemon.id);
-    // }
-
     isFavorito(pokemon: Pokemon): boolean {
-        // const pippus = !!this.favoriti.find((f) => f.pokemonId === pokemon.id);
-        // return pippus;
-        //return !!this.favoriti.find((f) => f.pokemonId === pokemon.id);
         return this.favoriti.includes(pokemon.id);
     }
 
