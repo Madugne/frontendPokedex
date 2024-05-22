@@ -6,6 +6,21 @@ body {
     padding-top: 7%;
 }
 
+.pokeball img,
+.trainers img {
+    width: 50%;
+    transition: transform 0.3s ease;
+}
+
+.pokeball img:hover,
+.trainers img:hover {
+    transform: scale(1.2);
+}
+
+.row {
+    margin-top: 15%;
+}
+
 @media screen and (max-width: 991px){
     .container {
         margin-top: 20%;

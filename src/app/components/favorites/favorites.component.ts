@@ -54,18 +54,9 @@ export class FavoritesComponent implements OnInit {
             });
     }
 
-    //recupero i favoriti di uno specifico utente per poi stamparli
-    // recuperaFavoritiStampa() {
-    //     this.pokemonService
-    //         .recuperaFavoriti(this.userId)
-    //         .subscribe((likes: Favourite[]) => {
-    //             this.preferiti = likes;
-    //             this.stampaPreferiti();
-    //         });
-    // }
-
     //stampa i pokemon preferiti attraverso l'id
     stampaPreferiti() {
+        this.pokemon = []; // Svuota l'array pokemon prima di aggiungere i nuovi pokemon
         this.favoriti.forEach((pok: any) => {
             if (pok) {
                 this.pokemonService
@@ -90,7 +81,8 @@ export class FavoritesComponent implements OnInit {
             .rimuoviFavorito(favorito.userId, favorito.pokemonId)
             .subscribe((resp: any) => {
                 console.log('ho rimosso pokemon');
-                window.location.reload();
+                // Dopo aver rimosso il pokemon, aggiorna la lista dei preferiti nel componente
+                this.recuperaFavorito();
             });
     }
 }
