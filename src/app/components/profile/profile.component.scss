@@ -1,0 +1,25 @@
+body {
+    background-image: url('https://wallpapers.com/images/hd/basic-red-pokeball-bwdp5mcaly84lo1u.jpg');
+    min-height: 100vh;
+  }
+.profilo {
+    padding-top: 7%;
+}
+
+@media screen and (max-width: 991px){
+    .container {
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 766px){
+    .container {
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width: 462px){
+    .container {
+        margin-top: 35%;
+    }
+}
