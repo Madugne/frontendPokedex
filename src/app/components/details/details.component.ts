@@ -37,7 +37,7 @@ export class DetailsComponent implements OnInit {
             this.userSurnameDetails = userDataDetails.surname;
             this.userUsernameDetails = userDataDetails.username;
             this.userImageUrl = userDataDetails.avatarUrl;
-            this.getPokemonCount(); // Chiamata per recuperare i preferiti
+            this.getPokemonCount();
         } else {
             console.log('No kakUser data found in local storage');
         }
