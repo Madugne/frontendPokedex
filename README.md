@@ -1,10 +1,14 @@
 # Pokedex
+This project is a reproduction of a Pokédex from the fictional world Pokémon, it's device designed to catalog and provide information regarding the various species of Pokémon.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.11.
+It will additionally need the backend which can be found here:
+
+https://github.com/Madugne/backendUsersPokedex
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `npm run fullstack`. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
